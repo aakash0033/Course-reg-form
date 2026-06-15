@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="courseReg.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                name="fname"
+                id="fname"
+                type="text"
+                size="15"
+                maxlength="10"
+                required
+                placeholder="EX:Aakash"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td><input type="text" name="Lname" size="15" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                required
+                placeholder="Mob:9856325478"
+                size="15"
+              />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input
+                type="email"
+                required
+                size="15"
+                placeholder="EX:xyz@gmail.com"
+              />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="pwd"
+                required
+                placeholder="min 5 characters"
+                size="15"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cp">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="min 5 characters"
+                size="15"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Date OF Birth</label></td>
+            <td><input type="date" required placeholder="D-O-B" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" />Male
+              <input type="radio" name="gender" value="F" />Female
+              <input type="radio" name="gender" value="O" />Others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="Country" required>
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="GERMANY">GERMANY</option>
+                <option value="FRANCE">FRANCE</option>
+                <option value="ITALY">ITALY</option>
+              </select>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Pictures</label></td>
+            <td><input type="file" name="Pic" /> <br /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <legend>Select Course</legend>
+        <select name="Course">
+          <option value="JFS">Java Full Stack Development</option>
+          <option value="PFS">Python Full Stack</option>
+          <option value="MERN">MERN Stack</option>
+          <option value="DS">Data Science</option>
+        </select>
+        <br />
+        <label>Delivery Mode</label>
+        <input type="radio" name="mode" value="ON" />Online
+        <input type="radio" name="mode" value="OFF" />Offline
+        <input type="radio" name="mode" value="HYB" />Hybrid
+        <br />
+        <label>Comments</label><br />
+        <textarea rows="5" cols="50"></textarea>
+        <br />
+
+        <input type="submit" name="" id="" />
+      </fieldset>
+    </form>
+  </body>
+</html>
